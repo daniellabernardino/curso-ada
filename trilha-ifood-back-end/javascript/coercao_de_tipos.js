@@ -20,4 +20,5 @@ console.clear()
 console.log(10 + "1") // O js converte tudo para texto e concatena (somente quando +)
 console.log(10 - "1") // O js converte para número e faz a operação 
 console.log('10' * 3) // O js converte para número e faz a operação 
-console.log(10 - 'xxxxx') // Ele tenta subtrair e retorna que não é um número  
+console.log(10 - 'xxxxx') // Tenta subtrair e retorna que não é um número  
+
