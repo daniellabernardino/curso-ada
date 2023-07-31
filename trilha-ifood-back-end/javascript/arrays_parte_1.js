@@ -29,4 +29,4 @@ for(let elemento of arr){
 
 for (let indice in arr){
   console.log(indice, arr[indice])  
-} // percorre os indices do array 
+} // percorre os indices do array
