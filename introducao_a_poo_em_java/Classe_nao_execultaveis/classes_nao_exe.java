@@ -5,14 +5,22 @@ public class classes_nao_exe {
     //Criando o objeto em si 
     //Classe de referência - nome da variavel - cria o novo objeto
     Cachorro cachorro1 = new Cachorro() ;
+     //Atribuir valores no objeto 
+    Cachorro cachorro2 = new Cachorro("Puppy", "Marron", 25, 5.7, 3, "nada") ;
 
-    //Atribuir valores no objeto 
-    cachorro1.nome = "Puppy";
-    cachorro1.cor = "Marron";
-    cachorro1.altura = 25;
-    cachorro1.peso = 5.5;
-    cachorro1.tamanhoDoRabo = 5;
 
-    System.out.println(cachorro1); // mostra o endereço do objeto na memoria
+    //System.out.println(cachorro1); mostra o endereço do objeto na memoria
+
+    System.out.println(cachorro2.getNome());
+    System.out.println(cachorro2.getCor());
+
+    //Chamando um método
+    cachorro1.latir(); //Ira retorna au au 
+
+    System.out.println("O cachorro pegou uma " + cachorro1.pegar());
+
+    System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
+    System.out.println("O cachorro está " + cachorro1.interagir("nada"));
+    System.out.println("O cachorro está " + cachorro1.interagir("vai dormir"));
   }
 }
