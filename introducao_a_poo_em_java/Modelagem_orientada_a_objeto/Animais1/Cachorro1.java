@@ -1,26 +1,15 @@
 package Animais1;
 
-public class Cachorro1 {
+public class Cachorro1 extends Animal{
   
   //variavel estatica
   static int numeroDeCachorros;
 
-  private String nome;
-  private String cor;
-  private int altura;
-  private double peso;
   private int tamanhoDoRabo;
-  private String estadoDoEspirito;
 
-  public Cachorro1(){}
-
-  public Cachorro1(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDoEspirito){
-    this.nome = nome;
-    this.cor = cor;
-    this.altura = altura;
-    this.peso = peso;
+  public Cachorro1(String nome, String cor, double peso, int tamanhoDoRabo){
+    super(nome, cor, peso);
     this.tamanhoDoRabo = tamanhoDoRabo;
-    this.estadoDoEspirito = estadoDoEspirito;
     
     //contagem de numeros de cachorros adicionados
     numeroDeCachorros ++;
@@ -55,11 +44,6 @@ public class Cachorro1 {
 
   public String getEstadoDoEspirito(){ return this.estadoDoEspirito;  }
 
-  public void comer(){} 
-
-  public void latir(){
-    System.out.println("AU AU!");
-  }
 
   public String pegar(){
     return "Bolinha"; 
@@ -76,10 +60,15 @@ public class Cachorro1 {
     }    
     return estadoDoEspirito;
   }
-  @Override
+  @Override //Pega um método do pai daquela classe e altera o resultado dele
   public String toString(){
     return "Cachorro{" +
             "nome='" + nome + '\'' +
             '}';
+  }
+
+  @Override
+  public void soar(){
+    System.out.println("AU! AU!");
   }
 }
