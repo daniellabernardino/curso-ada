@@ -41,3 +41,7 @@ public abstract class Animal {
   public abstract void soar(); //método abstrado, cada animal faz do seu jeito 
   
 }
+
+
+
+
